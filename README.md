@@ -1,9 +1,63 @@
-# construction_safety_gears_detection_using_yolo
+# Construction Safety Gear Detection using YOLO
 
-![construction safety gear detection](https://github.com/user-attachments/assets/c941b5d5-5f96-4fbe-ad52-f846b7a74a38)
+> Real-time Personal Protective Equipment (PPE) detection system for construction sites using YOLO. Helps improve workplace safety by automatically detecting helmets, vests, and other safety gear.
 
+![Construction Safety Gear Detection](https://github.com/user-attachments/assets/c941b5d5-5f96-4fbe-ad52-f846b7a74a38)
 
-![img 2](https://github.com/user-attachments/assets/a93282c9-b783-4f1f-955c-1536c25ac4f0)
+## Features
+- Real-time detection of safety helmets, vests, and other PPE
+- High-accuracy YOLO model
+- Easy inference on images, videos, and webcam
+- Detailed evaluation and visualization
 
-![img 3](https://github.com/user-attachments/assets/70d87911-df58-4676-b417-6273dcab7274)
+## Tech Stack
+- Python
+- YOLO (Ultralytics)
+- OpenCV
+- Matplotlib / Pandas
 
+## Installation
+```bash
+git clone https://github.com/nabilatajrin/construction_safety_gears_detection_using_yolo.git
+cd construction_safety_gears_detection_using_yolo
+pip install -r requirements.txt
+```
+
+## Usage
+```bash
+# Run detection on image
+python detect.py --source path/to/image.jpg
+
+# Run on video
+python detect.py --source path/to/video.mp4
+
+# Webcam mode
+python detect.py --source 0
+```
+
+## Results
+(Include your best metrics, charts, and mAP scores here)
+
+## Project Structure
+```
+├── data/
+├── models/
+├── notebooks/
+├── src/
+├── detect.py
+└── README.md
+```
+
+## Learnings & Challenges
+- Handled class imbalance in construction datasets
+- Optimized for real-time performance
+
+## Future Improvements
+- Deploy as web app (Streamlit/Gradio)
+- Integrate with CCTV systems
+- Add safety violation alerts
+
+---
+
+**License**  
+MIT © [Nabila Tajrin](https://github.com/nabilatajrin)
