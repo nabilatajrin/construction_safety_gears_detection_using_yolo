@@ -58,6 +58,7 @@ python detect.py --source 0
 - Add safety violation alerts
 
 --- Thank You ----
+<!-- Pull Shark PR 1 -->
 
 **License**  
 MIT © [Nabila Tajrin](https://github.com/nabilatajrin)
