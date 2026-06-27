@@ -57,7 +57,7 @@ python detect.py --source 0
 - Integrate with CCTV systems
 - Add safety violation alerts
 
----
+---Visit Again---
 
 **License**  
 MIT © [Nabila Tajrin](https://github.com/nabilatajrin)
