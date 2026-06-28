@@ -52,6 +52,8 @@ python detect.py --source 0
 - Handled class imbalance in construction datasets
 - Optimized for real-time performance
 
+- <!-- YOLO badge test -->
+
 ## Future Improvements
 - Deploy as web app (Streamlit/Gradio)
 - Integrate with CCTV systems
