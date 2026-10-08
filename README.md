@@ -2,13 +2,15 @@
 
 > Real-time Personal Protective Equipment (PPE) detection system for construction sites using YOLO. Helps improve workplace safety by automatically detecting helmets, vests, and other safety gear.
 
-![Construction Safety Gear Detection](https://github.com/user-attachments/assets/c941b5d5-5f96-4fbe-ad52-f846b7a74a38)
+## Current Status
+
+This repository currently contains the full training and evaluation notebook.  
+A clean, modular Python package structure (`src/`, `detect.py`, etc.) is planned as the next improvement.
 
 ## Features
 - Real-time detection of safety helmets, vests, and other PPE
-- High-accuracy YOLO model
-- Easy inference on images, videos, and webcam
-- Detailed evaluation and visualization
+- High-accuracy YOLO model (Ultralytics)
+- Training, evaluation, and inference workflow in Jupyter Notebook
 
 ## Tech Stack
 - Python
@@ -24,44 +26,25 @@ pip install -r requirements.txt
 ```
 
 ## Usage
+
+Open and run the notebook:
+
 ```bash
-# Run detection on image
-python detect.py --source path/to/image.jpg
-
-# Run on video
-python detect.py --source path/to/video.mp4
-
-# Webcam mode
-python detect.py --source 0
+jupyter notebook DLN__construction_safety_gears_detection_using_yolo.ipynb
 ```
 
-## Results
-(Include your best metrics, charts, and mAP scores here)
-
-## Project Structure
+## Project Structure (Current)
 ```
-├── data/
-├── models/
-├── notebooks/
-├── src/
-├── detect.py
+├── DLN__construction_safety_gears_detection_using_yolo.ipynb   # Main training & evaluation notebook
+├── requirements.txt
 └── README.md
 ```
 
-## Learnings & Challenges
-- Handled class imbalance in construction datasets
-- Optimized for real-time performance
+## Planned Improvements
+- Extract reusable code into `src/` modules
+- Add CLI script `detect.py` for easy inference on images/videos/webcam
+- Add sample detection results and metrics (mAP, precision, recall)
+- Deploy a simple Streamlit / Gradio demo
 
-- <!-- YOLO badge test -->
-
-## Future Improvements
-- Deploy as web app (Streamlit/Gradio)
-- Integrate with CCTV systems
-- Add safety violation alerts
-
---- Thank You ----
-<!-- Pull Shark PR 1 -->
-<!-- Pull Shark PR 2 -->
-
-**License**  
+## License
 MIT © [Nabila Tajrin](https://github.com/nabilatajrin)
